@@ -24,16 +24,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String nombre = nombreEditText.getText().toString();
                 String saludo = "¡Hola, " + nombre + "!";
-                Toast.makeText(MainActivity.this, saludo, Toast.LENGTH_SHORT).show();
+                //Toast.makeText(MainActivity.this, saludo, Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, SaludoActivity.class);
+                intent.putExtra("SALUDO", saludo);
+                startActivity(intent);
             }
         });
 
-        String nombre = nombreEditText.getText().toString();
-        String saludo = "¡Hola, " + nombre + "!";
-
-        Intent intent = new Intent(MainActivity.this, SaludoActivity.class);
-        intent.putExtra("SALUDO", saludo);
-        startActivity(intent);
     }
 
 
