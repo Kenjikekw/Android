@@ -40,7 +40,6 @@
                 android:text="Celda 3" />
         </TableRow>
 
-        <!-- Row 2 -->
         <TableRow>
 
             <TextView
@@ -65,7 +64,6 @@
                 android:text="Celda 6" />
         </TableRow>
 
-        <!-- Row 3 -->
         <TableRow>
 
             <TextView
