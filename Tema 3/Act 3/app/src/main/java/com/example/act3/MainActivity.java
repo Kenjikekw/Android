@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+/*
         final TextView sampleTextView = findViewById(R.id.sampleTextView);
         Button styleOneBtn = findViewById(R.id.styleOneBtn);
         Button styleTwoBtn = findViewById(R.id.styleTwoBtn);
@@ -29,6 +29,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 sampleTextView.setTextAppearance(MainActivity.this, R.style.TextStyleTwo);
             }
-        });
+        });*/
     }
 }
