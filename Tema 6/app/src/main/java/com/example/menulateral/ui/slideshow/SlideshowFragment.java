@@ -1,5 +1,6 @@
 package com.example.menulateral.ui.slideshow;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.menulateral.R;
 import com.example.menulateral.databinding.FragmentSlideshowBinding;
 
 public class SlideshowFragment extends Fragment {
@@ -24,8 +26,12 @@ public class SlideshowFragment extends Fragment {
         binding = FragmentSlideshowBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textSlideshow;
-        slideshowViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+         TextView textViewname = root.findViewById(R.id.textViewFinalName);
+        TextView textViewage = root.findViewById(R.id.textViewFinalAge);
+        Intent intent = getActivity().getIntent();
+        textViewname.setText(intent.getStringExtra("name"));
+        textViewage.setText(intent.getStringExtra("age"));
+
         return root;
     }
 
