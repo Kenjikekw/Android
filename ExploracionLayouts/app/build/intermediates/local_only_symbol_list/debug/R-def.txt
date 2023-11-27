@@ -1,0 +1,27 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable gato
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable rata
+drawable rosa
+id Boton1Main
+id Boton2Main
+id Boton3Main
+id imageView
+id imageView2
+id imageView3
+id linearLayout
+layout activity_frame
+layout activity_linear
+layout activity_main
+layout activity_table
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Base.Theme.ExploracionLayouts
+style Theme.ExploracionLayouts
+xml backup_rules
+xml data_extraction_rules
